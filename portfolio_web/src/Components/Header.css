@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=PT+Serif&family=Vollkorn&display=swap");
+.header {
+  display: flex;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #101010;
+  color: white;
+  padding: 0 6em;
+  height: 100px;
+}
+
+.header h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+  font-weight: bolder;
+  color: whitesmoke;
+  margin-top: 27px;
+}
+.header h3:hover {
+ color:#ef0963; 
+ cursor: pointer;
+}
+.header #head_bar {
+  font-size: 30px;
+  display: none;
+}
+.header #head_bar:hover {
+  background-image: linear-gradient(
+        90deg
+        ,#f61b10,#ef0963); 
+  cursor: pointer;
+}
+.header .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+.header .links a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: "PT Serif", serif;
+}
+
+.header .links a:hover {
+  color: #ef0963;
+}
+.header .links #link_resume {
+  border: 2px solid #ef0963;
+  padding: 10px 20px;
+ margin-left:0;
+}
+.header .links #link_resume:hover {
+  background-image: linear-gradient(
+        90deg
+        ,#f61b10,#ef0963); 
+  border: 2px solid white;
+  color: white;
+}
+@media screen and (max-width: 740px) {
+  .header {
+    padding: 0 2em;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .header {
+    display: grid;
+    background-color: #222831;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+  .header h3 {
+    width: fit-content;
+  }
+  .header #head_bar {
+    display: block;
+  }
+  .header .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: none;
+    text-align: left;
+    /* margin-left: -30px; */
+    margin-bottom: 1em;
+    background-color: #222831;
+    z-index: 10;
+    /* margin-top: -17px; */
+    padding-left:0px;
+    /* padding-right: 180px; */
+    position: absolute;
+    /* float:right; */
+    width: 100%;
+    right: 5px;
+    top: 102px;
+   
+  }
+  .header .links a {
+    margin: 10px;
+    margin-left:45px;
+    font-size: 15px;
+  }
+  .header .links #link_resume {
+    border: 2px solid #ff5151;
+    padding: 10px 20px;
+   margin-left:35px;
+  }
+}
